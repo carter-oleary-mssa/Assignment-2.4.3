@@ -21,12 +21,14 @@
         {
             case (< 0, < 0):
                 return "Third";
-            case ( < 0, >= 0):
+            case ( < 0, > 0):
                 return "Second";
-            case (>= 0, < 0):
+            case (> 0, < 0):
                 return "Fourth";
-            default:
+            case ( > 0, > 0):
                 return "First";
+            default:
+                return "On an axis";
 
         }
     }
